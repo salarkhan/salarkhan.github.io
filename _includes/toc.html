@@ -1,0 +1,15 @@
+<div>{{ include.data.name }}</div>
+<ul>
+  {% assign sorted = include.data.items | sort: 'date' | reverse %}
+  {% for item in sorted %}
+  <li>
+    {% if item.date %} {{ item.date }}{% endif %}
+
+    <a {% if item.playback %} class="video-anchor" {% endif %} 
+                              href="{{ item.url }}"
+                              data-anchor={{ item.anchor }}>
+      {{ item.name }}
+    </a>
+  </li>
+  {% endfor %}
+</ul>

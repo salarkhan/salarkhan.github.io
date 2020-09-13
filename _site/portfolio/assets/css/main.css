@@ -1,0 +1,33 @@
+html { font-family: monaco; font-size: .9rem; line-height: 1; -webkit-font-smoothing: antialiased; }
+
+h1, h2, h3, h4, h5, h6 { margin-top: 3rem; }
+
+hr { margin: 2rem 0; }
+
+p { margin: 1rem 0; }
+
+li { margin: 0.5rem 0; }
+
+*:target { background-color: yellow; }
+
+.wrapper { margin: 1rem; display: flex; }
+
+.header { position: fixed; top: 0; width: 100%; }
+
+.toc { flex: 1; min-width: 330px; }
+
+.content { flex: 3; }
+
+.hidden { display: none; }
+
+.video-item { width: 100%; }
+
+@media only screen and (max-width: 800px) { .wrapper { flex-direction: column; } }
+
+html { color: black; background-color: white; }
+
+a:visited { color: blue; }
+
+@media (prefers-color-scheme: dark) { html { color: white; background-color: #111; } a, a:visited { color: #1b9cfc; } }
+
+/*# sourceMappingURL=main.css.map */

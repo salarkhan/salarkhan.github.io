@@ -1,0 +1,9 @@
+name: contact
+items:
+  - name: github
+    url: http://www.github.com/salarkhan
+  - name: linkedin
+    url: http://www.linkedin.com/in/salarkhan
+  - name: email
+    url: mailto:public@salar.dev
+

@@ -1,0 +1,3 @@
+{% for item in include.data.items %}
+  <video class="video-item hidden" id="{{ item.anchor }}" data-playback={{ item.playback }} controls></video>
+{% endfor %}
