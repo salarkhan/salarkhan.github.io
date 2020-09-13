@@ -15,7 +15,10 @@ function bindEventListeners() {
 function loadHls() {
   for (let videoTag of document.querySelectorAll(".video-item")) {
     let url = "https://stream.mux.com/"+videoTag.dataset.playback+".m3u8";
-    if (Hls.isSupported()) {
+    // let native hls support handle it if possible: (iOS safari)
+    if (videoTag.canPlayType('application/vnd.apple.mpegurl')) {
+      videoTag.src = url;
+    } else if (Hls.isSupported()) {
       let hls = new Hls();
       hls.loadSource(url);
       let video = document.getElementById(videoTag.id);
