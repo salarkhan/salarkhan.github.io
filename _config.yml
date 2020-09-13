@@ -1,5 +1,5 @@
 title: salar
 baseurl: "" # the subpath of your site, e.g. /blog
-url: https://salarkhan.github.io # the base hostname & protocol for your site
+url: https://www.salar.dev # the base hostname & protocol for your site
 
 favicon: "./favicon.png" 
