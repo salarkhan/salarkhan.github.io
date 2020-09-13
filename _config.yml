@@ -1,5 +1,3 @@
 title: salar
 baseurl: "" # the subpath of your site, e.g. /blog
 url: https://www.salar.dev # the base hostname & protocol for your site
-
-favicon: "./favicon.png" 

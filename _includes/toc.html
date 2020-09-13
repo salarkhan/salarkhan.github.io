@@ -1,9 +1,9 @@
-<div>{{ include.data.name }}</div>
+<b>{{ include.data.name }}</b>
 <ul>
   {% assign sorted = include.data.items | sort: 'date' | reverse %}
   {% for item in sorted %}
   <li>
-    {% if item.date %} {{ item.date }}{% endif %}
+    {% if item.date %} {{ item.date }} {% endif %}
 
     <a {% if item.playback %} class="video-anchor" {% endif %} 
                               href="{{ item.url }}"

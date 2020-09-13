@@ -10,13 +10,9 @@ html {
 
 h1, h2, h3, h4, h5, h6 { margin-top: 3rem; }
 
-hr { margin: 2rem 0; }
-
 p { margin: 1rem 0; }
 
 li { margin: 0.5rem 0; }
-
-*:target { background-color: yellow; }
 
 // ----------------------------
 // styling
@@ -24,12 +20,6 @@ li { margin: 0.5rem 0; }
 .wrapper {
   margin: 1rem;
   display: flex;
-}
-
-.header {
-  position: fixed;
-  top: 0;
-  width: 100%;
 }
 
 .toc {
